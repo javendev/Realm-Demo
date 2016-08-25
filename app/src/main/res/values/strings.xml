@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Realm-Demo</string>
+    <string name="short_cut">下载</string>
+    <string name="short_cut2">启动</string>
 </resources>

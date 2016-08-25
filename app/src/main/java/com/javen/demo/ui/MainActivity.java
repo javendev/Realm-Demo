@@ -1,10 +1,11 @@
-package com.javen.demo;
+package com.javen.demo.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.javen.demo.R;
 import com.javen.demo.entity.User;
 import com.javen.demo.service.PollingService;
 import com.orhanobut.logger.Logger;
@@ -95,6 +96,8 @@ public class MainActivity extends AppCompatActivity {
         for (User user:users) {
             Logger.i("查询年龄等于20 的用户:"+user.toString());
         }
+
+        startActivity(new Intent(this,ShutCutActivity.class));
     }
 
     //通知
@@ -121,6 +124,7 @@ public class MainActivity extends AppCompatActivity {
         String path = myRealm.getPath();
         Logger.e(path);
     }
+
 
     @Override
     protected void onDestroy() {

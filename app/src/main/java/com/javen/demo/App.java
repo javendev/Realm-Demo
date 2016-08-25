@@ -4,8 +4,6 @@ import android.app.Application;
 
 import com.orhanobut.logger.Logger;
 
-import java.security.SecureRandom;
-
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
 
@@ -20,13 +18,13 @@ public class App extends Application{
         Logger.init("Javen");
 
         if (Common.IS_DEBUG){
-            //加密
-            byte[] key = new byte[64];
-            new SecureRandom().nextBytes(key);
+//            //加密
+//            byte[] key = new byte[64];
+//            new SecureRandom().nextBytes(key);
 
             config = new RealmConfiguration
                     .Builder(this)
-                    .encryptionKey(key)
+//                    .encryptionKey(key)
                     .name("demo.realm")
                     .deleteRealmIfMigrationNeeded()
                     .build();

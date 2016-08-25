@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.javen.demo.MainActivity">
+    tools:context=".ui.MainActivity">
 
 
     <Button
@@ -48,5 +48,7 @@
         android:layout_height="wrap_content"
         android:text="获取Realm保存的地址"
         android:onClick="getPath"/>
+
+
 
 </LinearLayout>
